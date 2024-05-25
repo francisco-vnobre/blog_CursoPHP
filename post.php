@@ -27,21 +27,21 @@
             Facilis, id obcaecati, iusto expedita odio autem harum culpa nihil dicta alias commodi! Dignissimos exercitationem maxime quisquam assumenda, facilis iusto, sunt mollitia ut cupiditate consequatur molestiae odit modi optio aperiam?
             Maxime nostrum culpa vitae. Reprehenderit, quae aperiam harum facilis veniam doloremque quidem, optio, cum nisi eum tempora libero commodi facere in quibusdam quos consectetur ut magni nostrum quam sed. Deserunt.</p>
         </div>
+        <aside id="nav_container">
+            <h3 id="tags-title">Tags</h3>
+            <ul id="tag-list">
+                <?php foreach($currentPost['tags'] as $tag): ?>
+                    <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <h3 id="categories-title">Categorias</h3>
+            <ul id="categories-list">
+                <?php foreach($categories as $category): ?>
+                    <li><a href="#"><?= $category ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </aside>
     </main>
-    <aside id="nav_container">
-        <h3 id="tgas-title">Tags</h3>
-        <ul id="tag-list">
-            <?php foreach($currentPost['tags'] as $tag): ?>
-                <li><a href="#"><?= $tag ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-        <h3 id="categories-title">Categorias</h3>
-        <ul id="categories-list">
-            <?php foreach($categories as $category): ?>
-                <li><a href="#"><?= $category ?></a></li>
-            <?php endforeach; ?>
-        </ul>
-    </aside>
 <?php
     include_once("templates/footer.php");
 ?>
